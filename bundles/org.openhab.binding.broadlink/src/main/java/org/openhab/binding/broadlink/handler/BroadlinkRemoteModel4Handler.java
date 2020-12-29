@@ -54,7 +54,7 @@ public class BroadlinkRemoteModel4Handler extends BroadlinkRemoteHandler {
             // mirroring the request
             float temperature = (float) ((double) (decodedPayload[6] * 100 + decodedPayload[7]) / 100D);
             updateState("temperature", new DecimalType(temperature));
-            float humidity = (float) ((double) (decodedPayload[8] * 100 + decodedPayload[8]) / 100D);
+            float humidity = (float) ((double) (decodedPayload[8] * 100 + decodedPayload[9]) / 100D);
             updateState("humidity", new DecimalType(humidity));
             return true;
         } catch (Exception e) {

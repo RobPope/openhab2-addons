@@ -179,7 +179,7 @@ public class BroadlinkRemoteModel4HandlerTest extends AbstractBroadlinkThingHand
         ChannelUID expectedHumidityChannel = new ChannelUID(thing.getUID(), "humidity");
         assertEquals(expectedHumidityChannel, channelCaptures.get(1));
 
-        DecimalType expectedHumidity = new DecimalType(-85.8499984741211D);
+        DecimalType expectedHumidity = new DecimalType(-85.81999969482422D);
         assertEquals(expectedHumidity, stateCaptures.get(1));
     }
 }
